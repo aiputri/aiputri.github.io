@@ -207,7 +207,7 @@ h6 {
 #home {
   width: 100%;
   height: 100vh;
-  background: url("../img/home-bg2.jpg") top right;
+  background: url("../img/home-bg.jpg") top right;
   background-size: cover;
   position: relative;
 }
@@ -351,9 +351,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Crumbs
+# Breadcrumbs
 --------------------------------------------------------------*/
-.crumbs {
+.breadcrumbs {
   padding: 20px 0;
   background-color: #f4f5f6;
   min-height: 40px;
@@ -361,24 +361,24 @@ section {
 }
 
 @media (max-width: 992px) {
-  .crumbs {
+  .breadcrumbs {
     margin-top: 60px;
   }
 }
 
-.crumbs h2 {
+.breadcrumbs h2 {
   font-size: 24px;
   font-weight: 300;
   margin: 0;
 }
 
 @media (max-width: 992px) {
-  .crumbs h2 {
+  .breadcrumbs h2 {
     margin: 0 0 10px 0;
   }
 }
 
-.crumbs ol {
+.breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -387,11 +387,11 @@ section {
   font-size: 14px;
 }
 
-.crumbs ol li+li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.crumbs ol li+li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
@@ -399,15 +399,15 @@ section {
 }
 
 @media (max-width: 768px) {
-  .crumbs .d-flex {
+  .breadcrumbs .d-flex {
     display: block !important;
   }
 
-  .crumbs ol {
+  .breadcrumbs ol {
     display: block;
   }
 
-  .crumbs ol li {
+  .breadcrumbs ol li {
     display: inline-block;
   }
 }
@@ -595,9 +595,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# My Services
+# My Portfolio
 --------------------------------------------------------------*/
-.services .icon-box {
+.portfolio .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -608,7 +608,7 @@ section {
   border: 1px solid #fff;
 }
 
-.services .icon {
+.portfolio .icon {
   margin: 0 auto 20px auto;
   padding-top: 17px;
   display: inline-block;
@@ -619,34 +619,34 @@ section {
   background: #fff4df;
 }
 
-.services .icon i {
+.portfolio .icon i {
   font-size: 36px;
   line-height: 1;
   color: #ffb727;
 }
 
-.services .title {
+.portfolio .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.portfolio .title a {
   color: #111;
   transition: 0.3s;
 }
 
-.services .description {
+.portfolio .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.portfolio .icon-box:hover {
   border-color: #ffb727;
 }
 
-.services .icon-box:hover .title a {
+.portfolio .icon-box:hover .title a {
   color: #ffb727;
 }
 
@@ -753,164 +753,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# My Portfolio
---------------------------------------------------------------*/
-.portfolio #portfolio-flters {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 10px 10px 10px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1;
-  padding: 7px 10px;
-  text-transform: uppercase;
-  color: #444444;
-  transition: all 0.3s ease-in-out;
-  border: 2px solid #fff;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #f3a200;
-  border-color: #ffb727;
-}
-
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio .portfolio-item .portfolio-img {
-  overflow: hidden;
-}
-
-.portfolio .portfolio-item .portfolio-img img {
-  transition: all 0.8s ease-in-out;
-}
-
-.portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  left: 15px;
-  bottom: 0;
-  z-index: 3;
-  right: 15px;
-  transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-}
-
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 0px;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: #fff;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #ffc041;
-}
-
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 10px;
-}
-
-.portfolio .portfolio-item:hover .portfolio-img img {
-  transform: scale(1.2);
-}
-
-.portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #ffb727;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffb727;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(59, 67, 74, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
 # Contact Me
 --------------------------------------------------------------*/
 .contact .info-box {
@@ -966,12 +808,12 @@ section {
   background: #ffb727;
 }
 
-.contact .php-email-form {
+.contact .email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 27px;
 }
 
-.contact .php-email-form .validate {
+.contact .email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -979,7 +821,7 @@ section {
   font-size: 13px;
 }
 
-.contact .php-email-form .error-message {
+.contact .email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -988,11 +830,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1001,14 +843,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1020,27 +862,27 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .email-form input,
+.contact .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input::focus,
-.contact .php-email-form textarea::focus {
+.contact .email-form input::focus,
+.contact .email-form textarea::focus {
   background-color: #ffb727;
 }
 
-.contact .php-email-form input {
+.contact .email-form input {
   padding: 10px 15px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .email-form button[type=submit] {
   background: #ffb727;
   border: 0;
   padding: 10px 24px;
@@ -1049,7 +891,7 @@ section {
   border-radius: 5px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .email-form button[type=submit]:hover {
   background: #ffc85a;
 }
 
